@@ -52,6 +52,8 @@ class RestaurantsModel(db.Model):
 
     @staticmethod
     def get_one_restaurant(id):
+        # print('id', id)
+        # print('restaruantsmodel', RestaurantsModel)
         return RestaurantsModel.query.get(id)
 
     def __repr__(self):
