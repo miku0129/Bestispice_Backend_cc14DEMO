@@ -4,15 +4,15 @@
 from flask import Flask
 from flask_cors import CORS
 
-from .src.config import app_config
-from .src.models import db
-# from .config import app_config
-# from .models import db
+# from .src.config import app_config
+# from .src.models import db
+from .config import app_config
+from .models import db
 
 
 # try stop using router
-from .src.views.RestaurantView import restaurant_api as restaurant_blueprint
-# from .views.RestaurantView import restaurant_api as restaurant_blueprint
+# from .src.views.RestaurantView import restaurant_api as restaurant_blueprint
+from .views.RestaurantView import restaurant_api as restaurant_blueprint
 
 
 def create_app(env_name):
