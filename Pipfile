@@ -12,6 +12,7 @@ psycopg2 = "*"
 flask-migrate = "*"
 flask-script = "*"
 gunicorn = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.8"

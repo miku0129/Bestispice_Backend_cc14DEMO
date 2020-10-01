@@ -1,13 +1,13 @@
 from flask import request, json, Response, Blueprint, jsonify, g
 from ..models.RestaurantsModel import RestaurantsModel
 
+# try stop using router
 restaurant_api = Blueprint('restaurants', __name__)
 
 
 # @restaurant_api.route('/', methods=['GET'])
 # def test():
 #     return custom_response({'message': 'Test!'}, 201)
-
 
 @restaurant_api.route('/', methods=['POST'])
 # post new information about a restaurant
