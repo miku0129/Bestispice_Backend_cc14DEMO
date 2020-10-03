@@ -1,5 +1,7 @@
 # Prockfile から　一時お引越し
 # web: gunicorn -w 4 --chdir src app:app
+# web: gunicorn wsgi:app
+
 
 # .envaから一時お引越し
 # FLASK_ENV=development
