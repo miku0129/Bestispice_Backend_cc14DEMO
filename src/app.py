@@ -3,7 +3,7 @@
 # web: gunicorn wsgi:app
 
 
-# .envaから一時お引越し
+# .envから一時お引越し
 # FLASK_ENV=development
 
 
