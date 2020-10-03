@@ -13,6 +13,7 @@ flask-migrate = "*"
 flask-script = "*"
 gunicorn = "*"
 flask-cors = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"

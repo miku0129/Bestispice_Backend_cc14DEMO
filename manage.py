@@ -5,8 +5,13 @@ from flask_migrate import Migrate, MigrateCommand
 from src.app import create_app, db
 # from .app import create_app, db
 
+# import environment from settings.py
+import settings
+# assign it to env_name
+env_name = settings.flaskenv
 
-env_name = os.getenv('FLASK_ENV')
+
+# env_name = os.getenv('FLASK_ENV')
 app = create_app(env_name)
 
 migrate = Migrate(app=app, db=db)

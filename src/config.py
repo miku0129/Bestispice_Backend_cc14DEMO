@@ -1,6 +1,12 @@
 # /src/config.py
-
+import settings
 import os
+
+import sys
+sys.path.append('../')
+
+
+DATABASE_URL = settings.databaseurl
 
 
 class Development(object):
