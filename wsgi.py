@@ -4,3 +4,4 @@ import os
 env_name = os.environ.get("FLASK_ENV") or 'development'
 app = create_app(env_name)
 
+# change .env development to production 
