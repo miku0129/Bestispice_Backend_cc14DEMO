@@ -1,3 +1,5 @@
+# heroku logs --tail -a cc14polyglottal-app
+
 # /run.py
 import os
 import settings
