@@ -1,14 +1,13 @@
 # /run.py
 import os
+import settings 
 
 from src.app import create_app
-# from .app import create_apps
 
 
 if __name__ == '__main__':
-    env_name = os.getenv('FLASK_ENV')
+    # env_name = os.getenv('FLASK_ENV')
+    env_name = os.environ.get('FLASK_ENV') or 'deveropment'
+
     app = create_app(env_name)
-    # run app
-    # app.run()
-    app.run(debug=False, host='0.0.0.0',
-            port=int(os.environ.get('PORT', 5000)))
+    app.run(debug=False)
