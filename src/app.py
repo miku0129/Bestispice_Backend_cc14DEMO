@@ -1,18 +1,10 @@
-# Prockfile から　一時お引越し
-# web: gunicorn -w 4 --chdir src app:app
-# web: gunicorn wsgi:app
-
 from flask import Flask
 from flask_cors import CORS
 
-# from .src.config import app_config
-# from .src.models import db
 from .config import app_config
 from .models.RestaurantsModel import db, RestaurantsModel, RestaurantsSchema
 
 
-# try stop using router
-# from .src.views.RestaurantView import restaurant_api as restaurant_blueprint
 from .views.RestaurantView import restaurant_api as restaurant_blueprint
 
 

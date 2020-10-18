@@ -22,7 +22,6 @@ class RestaurantsModel(db.Model):
     comments = db.Column(db.String(128))
 
 
-# skip class constructor
     def __init__(self, data):
         """
         Class constructor
