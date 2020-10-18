@@ -13,8 +13,8 @@ flask-migrate = "*"
 flask-script = "*"
 gunicorn = "*"
 flask-cors = "*"
-python-dotenv = "*"
 marshmallow = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"

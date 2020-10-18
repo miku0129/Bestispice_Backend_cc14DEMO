@@ -2,22 +2,13 @@
 # web: gunicorn -w 4 --chdir src app:app
 # web: gunicorn wsgi:app
 
-
-# .envから一時お引越し
-# FLASK_ENV=development
-
-# to test test
-
-
-# src/app.py
-
 from flask import Flask
 from flask_cors import CORS
 
 # from .src.config import app_config
 # from .src.models import db
 from .config import app_config
-from .models import db
+from .models.RestaurantsModel import db, RestaurantsModel, RestaurantsSchema
 
 
 # try stop using router

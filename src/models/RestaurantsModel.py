@@ -1,5 +1,5 @@
 from . import db
-from marshmallow import fields, Schema()
+from marshmallow import fields, Schema
 
 
 class RestaurantsModel(db.Model):

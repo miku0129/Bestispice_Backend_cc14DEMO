@@ -1,5 +1,7 @@
 import os
 from os.path import join, dirname
+
+# なんでpython-dotenvでinstallしたのにdotenvで動くのだろうか？
 from dotenv import load_dotenv
 
 dotenv_path = join(dirname(__file__), '.env')

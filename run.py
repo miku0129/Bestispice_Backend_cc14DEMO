@@ -1,13 +1,12 @@
 # /run.py
 import os
-import settings 
+import settings
 
 from src.app import create_app
 
 
 if __name__ == '__main__':
-    # env_name = os.getenv('FLASK_ENV')
-    env_name = os.environ.get('FLASK_ENV') or 'deveropment'
+    env_name = os.environ.get('FLASK_ENV') or 'development'
 
     app = create_app(env_name)
-    app.run(debug=False)
+    app.run(debug=True)
