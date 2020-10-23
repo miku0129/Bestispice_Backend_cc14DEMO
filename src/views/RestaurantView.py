@@ -60,7 +60,7 @@ def get_an_info(restaurant_id):
     ret = RestaurantsModel.get_one_restaurant(restaurant_id)
     print('ret', ret.name)
     # return custom_response({'message': 'done!'}, 201)
-    return jsonify(name=ret.name, feature=ret.feature, place=ret.place, tell=ret.tell, business_hours1=ret.business_hours1, business_hours2=ret.business_hours2, regular_holiday=ret.regular_holiday, url=ret.url)
+    return jsonify(name=ret.name, feature=ret.feature, place=ret.place, tell=ret.tell, business_hours1=ret.business_hours1, business_hours2=ret.business_hours2, regular_holiday=ret.regular_holiday, url=ret.url, comments=ret.comments)
 
 
 @restaurant_api.route('/', methods=['GET'])
