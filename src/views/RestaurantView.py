@@ -78,7 +78,7 @@ def get_all_info():
 
     # ret_dct = {i: [ret[i].name, ret[i].feature]for i in range(0, len(ret), 1)}
     ret_dct = {ret[i].name: [ret[i].name, ret[i].id, ret[i].feature,
-                             ret[i].place, ret[i].url]for i in range(0, len(ret), 1)}
+                             ret[i].place, ret[i].url, ret[i].comments]for i in range(0, len(ret), 1)}
 
     return custom_response(ret_dct, 201)
 
