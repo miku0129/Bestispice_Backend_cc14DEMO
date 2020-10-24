@@ -83,18 +83,18 @@ def get_all_info():
     return custom_response(ret_dct, 201)
 
 
-@restaurant_api.route('/<int:restaurant_id>/<restaurant_name>', methods=['PUT'])
+@restaurant_api.route('/<int:restaurant_id>/<restaurant_comments>', methods=['PUT'])
 # update information of single restaurants which be found by id
-def update(restaurant_id, restaurant_name):
+def update(restaurant_id, restaurant_comments):
     id = restaurant_id
     print('id', id)
-    newName = restaurant_name
-    print('name', newName)
+    newComments = restaurant_comments
+    print('comments', newComments)
     # req_data = request.get_json()
     # data = req_data
     ret = RestaurantsModel.get_one_restaurant(restaurant_id)
-    updateName = {'name': newName}
-    ret.update(updateName)
+    updateComments = {'comments': newComments}
+    ret.update(updateComments)
     # return jsonify(name=ret.name, feature=ret.feature, place=ret.place, tell=ret.tell, business_hours1=ret.business_hours1, business_hours2=ret.business_hours2, regular_holiday=ret.regular_holiday, url=ret.url)
     return custom_response({'message': 'Updated'}, 201)
 
